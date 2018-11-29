@@ -1,6 +1,8 @@
 # Change-Hero-Banner-Wordpress
 This plugin allows to change the hero banner image according to selected page.
 
+Wordpress version 4
+
 Copy the plugin into wp-content/plugins folder
 Activate Plugin from Wordpress admin
 
