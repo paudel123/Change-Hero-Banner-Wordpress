@@ -1,2 +1,2 @@
 <?php
-//First line.
+//Nothing to show.
