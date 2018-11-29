@@ -1,6 +1,7 @@
 <?php
 /**
  * @package  Lekha Hero Banner Plugin
+ * 
  */
 /*
 Plugin Name: Lekha Hero Banner Plugin
@@ -9,7 +10,9 @@ Version: 1.0.0
 Author: Lekha Nath Paudel
 Text Domain: lekha-hero-banner-plugin
 */
-
+/*
+reference - wp-display-header
+*/
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
@@ -120,14 +123,14 @@ class Lekha_Hero_Banner_Plugin
 	}
 
 	function add_meta_boxes( $post_type ) {
-		add_meta_box('lekha-hero-banner-plugin', esc_html__( 'Header' ),
+		add_meta_box('lekha-hero-banner-plugin', esc_html__( 'Hero Banner' ),
 			array($this, 'display_meta_box'),
 			$post_type, 'normal', 'high'
 		);
 	}
 
 	function add_settings_field() {
-		add_settings_field($this->textdomain, esc_html__( 'Choose Header', 'lekha-hero-banner-plugin' ),
+		add_settings_field($this->textdomain, esc_html__( 'Choose Hero Banner', 'lekha-hero-banner-plugin' ),
 			array($this, 'select_header',
 			),
 			$this->textdomain,
