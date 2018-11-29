@@ -16,7 +16,7 @@ reference - wp-display-header
 if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
-defined( 'ABSPATH' ) or die( 'Hey, you can not directly access this file' );
+defined( 'ABSPATH' ) or die( 'Hello, you can not directly access this file' );
 
 
 register_activation_hook( __FILE__, array('Lekha_Hero_Banner_Plugin', 'activation'));
